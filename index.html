@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Ketchup Search</title>
+</head>
+<body>
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="croutonjs/crouton.min.css" />
+<div id="bmlt-tabs"></div>
+</body>
+<script src="croutonjs/crouton.min.js"></script>
+<script type="text/javascript">
+    var crouton = new Crouton({
+        "root_server": "https://tomato.bmltenabled.org/main_server",
+        "map_search": { latitude: 35.542053, longitude: -78.0652501, width: 10, zoom: 8, auto: true },
+        "google_api_key": "AIzaSyBh3MqBZL6Rr-R5-S9jpcx56zcHd01oDBI",
+        "show_distance": true,
+        "theme": "lucy",
+        "template_path": "croutonjs/templates"
+    });
+</script>
+</html>
