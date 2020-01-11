@@ -14148,6 +14148,8 @@ Crouton.prototype.mapSearchPanZoomMode = function() {
 
 Crouton.prototype.mapSearchNearMeMode = function() {
 	var self = this;
+	self.mapSearchPanZoomMode();
+	jQuery("#panzoom").prop("checked", true);
 	self.getCurrentLocation(function(position) {
 		self.searchByCoordinates(position.coords.latitude, position.coords.longitude);
 	});
@@ -14155,18 +14157,17 @@ Crouton.prototype.mapSearchNearMeMode = function() {
 
 Crouton.prototype.mapSearchTextMode = function(location) {
 	var self = this;
+	self.mapSearchPanZoomMode();
+	jQuery("#panzoom").prop("checked", true);
 	if (location !== undefined && location !== null && location !== "") {
 		self.geocoder.geocode({'address': location}, function (results, status) {
 			if (status === 'OK') {
-				self.mapSearchPanZoomMode();
-				jQuery("#panzoom").prop("checked", true);
 				self.searchByCoordinates(results[0].geometry.location.lat(), results[0].geometry.location.lng());
 			} else {
 				console.log('Geocode was not successful for the following reason: ' + status);
 			}
 		});
 	}
-	//}
 };
 
 Crouton.prototype.renderMap = function() {
