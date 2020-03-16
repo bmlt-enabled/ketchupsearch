@@ -12852,7 +12852,12 @@ function CroutonLocalization(language) {
 			"postal_codes": "Post nummer",
 			"formats": "Struktur",
 			"map": "Kort",
-			"neighborhood": "",
+			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"de-DE":{
 			"days_of_the_week": ["", "Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Frietag", "Samstag"],
@@ -12867,7 +12872,12 @@ function CroutonLocalization(language) {
 			"postal_codes": "PLZ",
 			"formats": "Formate",
 			"map": "Karte",
-			"neighborhood": "",
+			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"en-US": {
 			"days_of_the_week" : ["", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -12883,6 +12893,11 @@ function CroutonLocalization(language) {
 			"formats" : "Formats",
 			"map" : "Map",
 			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"en-CA": {
 			"days_of_the_week" : ["", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -12898,6 +12913,11 @@ function CroutonLocalization(language) {
 			"formats" : "Formats",
 			"map" : "Map",
 			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"fa-IR": {
 			"days_of_the_week" : ["", 'یَکشَنب', 'دوشَنبه', 'سه‌شنبه', 'چهار شنبه', 'پَنج شَنبه', 'جُمعه', 'شَنبه'],
@@ -12913,6 +12933,11 @@ function CroutonLocalization(language) {
 			"formats" : "فورمت ها",
 			"map" : "نقشه",
 			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"fr-CA": {
 			"days_of_the_week" : ["", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
@@ -12927,7 +12952,12 @@ function CroutonLocalization(language) {
 			"postal_codes" : "Codes postaux",
 			"formats" : "Formats",
 			"map" : "Carte",
-			"neighborhood": "",
+			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"it-IT": {
 			"days_of_the_week" : ["", "Domenica", " Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"],
@@ -12942,7 +12972,12 @@ function CroutonLocalization(language) {
 			"postal_codes" : "CAP",
 			"formats" : "Formati",
 			"map" : "Mappa",
-			"neighborhood": "",
+			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"es-US": {
 			"days_of_the_week" : ["", "Domingo", " Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
@@ -12958,6 +12993,11 @@ function CroutonLocalization(language) {
 			"formats" : "Formatos",
 			"map" : "Mapa",
 			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"en-NZ": {
 			"days_of_the_week" : ["", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -12973,6 +13013,11 @@ function CroutonLocalization(language) {
 			"formats" : "Formats",
 			"map" : "Map",
 			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"en-AU": {
 			"days_of_the_week" : ["", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -12986,7 +13031,13 @@ function CroutonLocalization(language) {
 			"states" : "States",
 			"postal_codes" : "Postcodes",
 			"formats" : "Formats",
-			"map" : "Map"
+			"map" : "Map",
+			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"en-UK": {
 			"days_of_the_week" : ["", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
@@ -13002,6 +13053,11 @@ function CroutonLocalization(language) {
 			"formats" : "Formats",
 			"map" : "Map",
 			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"pl-PL": {
 			"days_of_the_week" : ["", "Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"],
@@ -13016,7 +13072,12 @@ function CroutonLocalization(language) {
 			"postal_codes" : "Kody pocztowe",
 			"formats" : "Formaty",
 			"map" : "Mapa",
-			"neighborhood": "",
+			"neighborhood": "Neighborhood",
+			"near_me": "Near Me",
+			"text_search": "Text Search",
+			"click_search": "Click Search",
+			"pan_and_zoom": "Pan + Zoom",
+			"languages": "Languages",
 		},
 		"pt-BR": {
 			"days_of_the_week" : ["", "Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"],
@@ -13032,6 +13093,11 @@ function CroutonLocalization(language) {
 			"formats" : "Formatos",
 			"map" : "Mapa",
 			"neighborhood": "Bairro",
+			"near_me": "Minha Localização",
+			"text_search": "Buscar por Texto",
+			"click_search": "Clique no local",
+			"pan_and_zoom": "Panorâmico + Zoom",
+			"languages": "Languages",
 		},
 	};
 }
@@ -13100,6 +13166,8 @@ this["hbs_Crouton"]["templates"]["header"] = Handlebars.template({"1":function(c
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.has_zip_codes : stack1),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":86,"column":4},"end":{"line":95,"column":11}}})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.has_formats : stack1),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":97,"column":4},"end":{"line":106,"column":11}}})) != null ? stack1 : "")
+    + "\n"
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.has_languages : stack1),{"name":"if","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":108,"column":1},"end":{"line":117,"column":8}}})) != null ? stack1 : "")
     + "    </div>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "        <div class=\"bmlt-button-container\"><a id=\"day\" class=\"btn btn-primary btn-sm\">"
@@ -13118,11 +13186,11 @@ this["hbs_Crouton"]["templates"]["header"] = Handlebars.template({"1":function(c
 },"6":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"cities",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":11,"column":107},"end":{"line":11,"column":127}}}))
-    + "\" data-pointer=\"Cities\" id=\"e1\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"cities",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":11,"column":123},"end":{"line":11,"column":143}}}))
+    + "\" data-pointer=\"Cities\" id=\"filter-dropdown-cities\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.cities : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":13,"column":16},"end":{"line":15,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
@@ -13136,21 +13204,21 @@ this["hbs_Crouton"]["templates"]["header"] = Handlebars.template({"1":function(c
 },"9":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"groups",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":22,"column":107},"end":{"line":22,"column":127}}}))
-    + "\" data-pointer=\"Groups\" id=\"e2\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"groups",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":22,"column":123},"end":{"line":22,"column":143}}}))
+    + "\" data-pointer=\"Groups\" id=\"filter-dropdown-groups\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.groups : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":24,"column":16},"end":{"line":26,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"11":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"areas",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":33,"column":107},"end":{"line":33,"column":126}}}))
-    + "\" data-pointer=\"Areas\" id=\"e3\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"areas",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":33,"column":123},"end":{"line":33,"column":142}}}))
+    + "\" data-pointer=\"Areas\" id=\"filter-dropdown-areas\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.areas : stack1),{"name":"each","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":35,"column":16},"end":{"line":37,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"12":function(container,depth0,helpers,partials,data) {
@@ -13164,61 +13232,61 @@ this["hbs_Crouton"]["templates"]["header"] = Handlebars.template({"1":function(c
 },"14":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"locations",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":44,"column":107},"end":{"line":44,"column":130}}}))
-    + "\" data-pointer=\"Locations\" id=\"e4\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"locations",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":44,"column":123},"end":{"line":44,"column":146}}}))
+    + "\" data-pointer=\"Locations\" id=\"filter-dropdown-locations\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.locations : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":46,"column":16},"end":{"line":48,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"16":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"counties",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":55,"column":107},"end":{"line":55,"column":129}}}))
-    + "\" data-pointer=\"Counties\" id=\"e5\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"counties",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":55,"column":123},"end":{"line":55,"column":145}}}))
+    + "\" data-pointer=\"Counties\" id=\"filter-dropdown-sub_province\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.sub_provinces : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":57,"column":16},"end":{"line":59,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"18":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"neighborhood",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":66,"column":107},"end":{"line":66,"column":133}}}))
-    + "\" data-pointer=\"Neighborhoods\" id=\"e5\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"neighborhood",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":66,"column":123},"end":{"line":66,"column":149}}}))
+    + "\" data-pointer=\"Neighborhoods\" id=\"filter-dropdown-neighborhoods\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.neighborhoods : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":68,"column":4},"end":{"line":70,"column":13}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"20":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"states",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":77,"column":107},"end":{"line":77,"column":127}}}))
-    + "\" data-pointer=\"States\" id=\"e6\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"states",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":77,"column":123},"end":{"line":77,"column":143}}}))
+    + "\" data-pointer=\"States\" id=\"filter-dropdown-states\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.states : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":79,"column":16},"end":{"line":81,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"22":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"postal_codes",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":88,"column":107},"end":{"line":88,"column":133}}}))
-    + "\" data-pointer=\"Zips\" id=\"e7\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"postal_codes",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":88,"column":123},"end":{"line":88,"column":149}}}))
+    + "\" data-pointer=\"Zips\" id=\"filter-dropdown-zipcodes\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.zips : stack1),{"name":"each","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":90,"column":16},"end":{"line":92,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"24":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select\" style=\"width:"
+  return "        <div class=\"bmlt-dropdown-container\">\n            <select class=\"crouton-select filter-dropdown\" style=\"width:"
     + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
     + ";\" data-placeholder=\""
-    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"formats",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":99,"column":107},"end":{"line":99,"column":128}}}))
-    + "\" data-pointer=\"Formats\" id=\"e8\">\n                <option></option>\n"
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"formats",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":99,"column":123},"end":{"line":99,"column":144}}}))
+    + "\" data-pointer=\"Formats\" id=\"filter-dropdown-formats\">\n                <option></option>\n"
     + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.formats : stack1),{"name":"each","hash":{},"fn":container.program(25, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":101,"column":16},"end":{"line":103,"column":25}}})) != null ? stack1 : "")
     + "            </select>\n        </div>\n";
 },"25":function(container,depth0,helpers,partials,data) {
@@ -13230,30 +13298,48 @@ this["hbs_Crouton"]["templates"]["header"] = Handlebars.template({"1":function(c
     + alias3(((helper = (helper = helpers.name_string || (depth0 != null ? depth0.name_string : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"name_string","hash":{},"data":data,"loc":{"start":{"line":102,"column":72},"end":{"line":102,"column":87}}}) : helper)))
     + "</option>\n";
 },"27":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=container.escapeExpression, alias2=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return "		<div class=\"bmlt-dropdown-container\">\n			<select class=\"crouton-select filter-dropdown\" style=\"width:"
+    + alias1(container.lambda(((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.dropdown_width : stack1), depth0))
+    + ";\" data-placeholder=\""
+    + alias1((helpers.getWord||(depth0 && depth0.getWord)||container.hooks.helperMissing).call(alias2,"languages",{"name":"getWord","hash":{},"data":data,"loc":{"start":{"line":110,"column":114},"end":{"line":110,"column":137}}}))
+    + "\" data-pointer=\"Languages\" id=\"filter-dropdown-languages\">\n				<option></option>\n"
+    + ((stack1 = helpers.each.call(alias2,((stack1 = (depth0 != null ? depth0.uniqueData : depth0)) != null ? stack1.languages : stack1),{"name":"each","hash":{},"fn":container.program(28, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":112,"column":4},"end":{"line":114,"column":13}}})) != null ? stack1 : "")
+    + "			</select>\n		</div>\n";
+},"28":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
+
+  return "					<option value=\"a-"
+    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.name_string : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":113,"column":22},"end":{"line":113,"column":55}}}))
+    + "\">"
+    + alias3(((helper = (helper = helpers.name_string || (depth0 != null ? depth0.name_string : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"name_string","hash":{},"data":data,"loc":{"start":{"line":113,"column":57},"end":{"line":113,"column":72}}}) : helper)))
+    + "</option>\n";
+},"30":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return ((stack1 = (helpers.ifEquals||(depth0 && depth0.ifEquals)||container.hooks.helperMissing).call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.view_by : stack1),"weekdays",{"name":"ifEquals","hash":{},"fn":container.program(28, data, 0),"inverse":container.program(30, data, 0),"data":data,"loc":{"start":{"line":111,"column":4},"end":{"line":115,"column":17}}})) != null ? stack1 : "")
+  return ((stack1 = (helpers.ifEquals||(depth0 && depth0.ifEquals)||container.hooks.helperMissing).call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.view_by : stack1),"weekdays",{"name":"ifEquals","hash":{},"fn":container.program(31, data, 0),"inverse":container.program(33, data, 0),"data":data,"loc":{"start":{"line":122,"column":4},"end":{"line":126,"column":17}}})) != null ? stack1 : "")
     + "        <ul class=\"nav nav-tabs\">\n"
-    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.day_sequence : stack1),{"name":"each","hash":{},"fn":container.program(32, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":117,"column":12},"end":{"line":119,"column":21}}})) != null ? stack1 : "")
+    + ((stack1 = helpers.each.call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.day_sequence : stack1),{"name":"each","hash":{},"fn":container.program(35, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":128,"column":12},"end":{"line":130,"column":21}}})) != null ? stack1 : "")
     + "        </ul>\n    </div>\n";
-},"28":function(container,depth0,helpers,partials,data) {
+},"31":function(container,depth0,helpers,partials,data) {
     return "        <div class=\"bmlt-page show\" id=\"nav-days\">\n";
-},"30":function(container,depth0,helpers,partials,data) {
+},"33":function(container,depth0,helpers,partials,data) {
     return "        <div class=\"bmlt-page hide\" id=\"nav-days\">\n";
-},"32":function(container,depth0,helpers,partials,data) {
+},"35":function(container,depth0,helpers,partials,data) {
     var alias1=container.escapeExpression;
 
   return "                <li><a href=\"#tab"
     + alias1(container.lambda(depth0, depth0))
     + "\" data-toggle=\"tab\">"
-    + alias1((helpers.getDayOfTheWeek||(depth0 && depth0.getDayOfTheWeek)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"getDayOfTheWeek","hash":{},"data":data,"loc":{"start":{"line":118,"column":61},"end":{"line":118,"column":85}}}))
+    + alias1((helpers.getDayOfTheWeek||(depth0 && depth0.getDayOfTheWeek)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"getDayOfTheWeek","hash":{},"data":data,"loc":{"start":{"line":129,"column":61},"end":{"line":129,"column":85}}}))
     + "</a></li>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.header : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":108,"column":7}}})) != null ? stack1 : "")
+  return ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.header : stack1),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":119,"column":7}}})) != null ? stack1 : "")
     + "\n"
-    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.has_tabs : stack1),{"name":"if","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":110,"column":0},"end":{"line":122,"column":7}}})) != null ? stack1 : "");
+    + ((stack1 = helpers["if"].call(alias1,((stack1 = (depth0 != null ? depth0.config : depth0)) != null ? stack1.has_tabs : stack1),{"name":"if","hash":{},"fn":container.program(30, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":121,"column":0},"end":{"line":133,"column":7}}})) != null ? stack1 : "");
 },"useData":true});
 this["hbs_Crouton"]["templates"]["master"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
@@ -13277,86 +13363,72 @@ this["hbs_Crouton"]["templates"]["master"] = Handlebars.template({"1":function(c
     + "    </div>\n</div>\n";
 },"usePartial":true,"useData":true});
 this["hbs_Crouton"]["templates"]["meetings"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression, alias4=container.lambda;
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression, alias3=depth0 != null ? depth0 : (container.nullContext || {}), alias4=container.hooks.helperMissing;
 
-  return "    <tr class=\"bmlt-data-row\"\n        data-cities=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.location_municipality : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":3,"column":21},"end":{"line":3,"column":69}}}))
-    + "\"\n        data-groups=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.meeting_name : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":4,"column":21},"end":{"line":4,"column":60}}}))
-    + "\"\n        data-locations=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.location_text : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":5,"column":24},"end":{"line":5,"column":64}}}))
-    + "\"\n        data-zips=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.location_postal_code_1 : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":6,"column":19},"end":{"line":6,"column":68}}}))
-    + "\"\n        data-formats=\""
-    + alias3((helpers.formatDataPointerFormats||(depth0 && depth0.formatDataPointerFormats)||alias2).call(alias1,(depth0 != null ? depth0.formats_expanded : depth0),{"name":"formatDataPointerFormats","hash":{},"data":data,"loc":{"start":{"line":7,"column":22},"end":{"line":7,"column":72}}}))
-    + "\"\n        data-areas=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.service_body_bigint : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":8,"column":20},"end":{"line":8,"column":66}}}))
-    + "\"\n        data-counties=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.location_sub_province : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":9,"column":23},"end":{"line":9,"column":71}}}))
-    + "\"\n        data-neighborhoods=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.location_neighborhood : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":10,"column":28},"end":{"line":10,"column":76}}}))
-    + "\"\n        data-states=\""
-    + alias3((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias2).call(alias1,(depth0 != null ? depth0.location_province : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":11,"column":21},"end":{"line":11,"column":65}}}))
-    + "\">\n        <td class=\"bmlt-column1\">\n            <div class=\"bmlt-day\">"
-    + alias3(alias4((depth0 != null ? depth0.formatted_day : depth0), depth0))
-    + "</div>\n            <div class=\"bmlt-time-2\">"
-    + alias3(alias4((depth0 != null ? depth0.start_time_formatted : depth0), depth0))
+  return "	<tr class=\"bmlt-data-row\"\n		id=\"meeting-data-row-"
+    + alias2(alias1((depth0 != null ? depth0.id_bigint : depth0), depth0))
+    + "\"\n		data-cities=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.location_municipality : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":4,"column":15},"end":{"line":4,"column":63}}}))
+    + "\"\n		data-groups=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.meeting_name : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":5,"column":15},"end":{"line":5,"column":54}}}))
+    + "\"\n		data-locations=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.location_text : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":6,"column":18},"end":{"line":6,"column":58}}}))
+    + "\"\n		data-zips=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.location_postal_code_1 : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":7,"column":13},"end":{"line":7,"column":62}}}))
+    + "\"\n		data-formats=\""
+    + alias2((helpers.formatDataPointerFormats||(depth0 && depth0.formatDataPointerFormats)||alias4).call(alias3,(depth0 != null ? depth0.formats_expanded : depth0),{"name":"formatDataPointerFormats","hash":{},"data":data,"loc":{"start":{"line":8,"column":16},"end":{"line":8,"column":66}}}))
+    + "\"\n		data-areas=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.service_body_bigint : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":9,"column":14},"end":{"line":9,"column":60}}}))
+    + "\"\n		data-counties=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.location_sub_province : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":10,"column":17},"end":{"line":10,"column":65}}}))
+    + "\"\n		data-neighborhoods=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.location_neighborhood : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":11,"column":22},"end":{"line":11,"column":70}}}))
+    + "\"\n		data-states=\""
+    + alias2((helpers.formatDataPointer||(depth0 && depth0.formatDataPointer)||alias4).call(alias3,(depth0 != null ? depth0.location_province : depth0),{"name":"formatDataPointer","hash":{},"data":data,"loc":{"start":{"line":12,"column":15},"end":{"line":12,"column":59}}}))
+    + "\"\n		data-languages=\""
+    + alias2((helpers.formatDataPointerFormats||(depth0 && depth0.formatDataPointerFormats)||alias4).call(alias3,(depth0 != null ? depth0.formats_expanded : depth0),{"name":"formatDataPointerFormats","hash":{},"data":data,"loc":{"start":{"line":13,"column":18},"end":{"line":13,"column":68}}}))
+    + "\">\n		<td class=\"bmlt-column1\">\n			<div class=\"bmlt-day\">"
+    + alias2(alias1((depth0 != null ? depth0.formatted_day : depth0), depth0))
+    + "</div>\n			<div class=\"bmlt-time-2\">"
+    + alias2(alias1((depth0 != null ? depth0.start_time_formatted : depth0), depth0))
     + " - "
-    + alias3(alias4((depth0 != null ? depth0.end_time_formatted : depth0), depth0))
+    + alias2(alias1((depth0 != null ? depth0.end_time_formatted : depth0), depth0))
     + "</div>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.formats : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":15,"column":12},"end":{"line":42,"column":19}}})) != null ? stack1 : "")
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.is_virtual : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data,"loc":{"start":{"line":43,"column":12},"end":{"line":47,"column":19}}})) != null ? stack1 : "")
-    + "        </td>\n        <td class=\"bmlt-column2\">\n			<div class=\"meeting-data-template\">"
+    + ((stack1 = helpers["if"].call(alias3,(depth0 != null ? depth0.formats : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":17,"column":3},"end":{"line":44,"column":10}}})) != null ? stack1 : "")
+    + ((stack1 = helpers["if"].call(alias3,(depth0 != null ? depth0.is_virtual : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(7, data, 0),"data":data,"loc":{"start":{"line":45,"column":3},"end":{"line":49,"column":10}}})) != null ? stack1 : "")
+    + "		</td>\n		<td class=\"bmlt-column2\">\n			<div class=\"meeting-data-template\">"
     + ((stack1 = container.invokePartial(partials.meetingDataTemplate,depth0,{"name":"meetingDataTemplate","data":data,"helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
-    + "</div>\n        </td>\n"
-    + ((stack1 = helpers["if"].call(alias1,(depth0 != null ? depth0.is_virtual : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(11, data, 0),"data":data,"loc":{"start":{"line":52,"column":8},"end":{"line":63,"column":15}}})) != null ? stack1 : "")
-    + "    </tr>\n";
+    + "</div>\n		</td>\n		<td class=\"bmlt-column3\">\n"
+    + ((stack1 = container.invokePartial(partials.metaDataTemplate,depth0,{"name":"metaDataTemplate","data":data,"indent":"\t\t\t","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "")
+    + "		</td>\n	</tr>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "                <a id=\"bmlt-formats\"\n                   class=\"btn btn-primary btn-xs\"\n                   title=\"\"\n                   data-html=\"true\"\n                   tabindex=\"0\"\n                   data-trigger=\"focus\"\n                   role=\"button\"\n                   data-toggle=\"popover\"\n                   data-original-title=\"\"\n                   data-content=\"\n                        <table class='bmlt_a_format table-bordered'>\n"
-    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.formats_expanded : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":27,"column":24},"end":{"line":33,"column":33}}})) != null ? stack1 : "")
-    + "                    </table>\">\n                    <span class=\"glyphicon glyphicon-search\"\n                          aria-hidden=\"true\"\n                          data-toggle=\"popover\"\n                          data-trigger=\"focus\"\n                          data-html=\"true\"\n                          role=\"button\"></span>"
+  return "				<a id=\"bmlt-formats\"\n				   class=\"btn btn-primary btn-xs\"\n				   title=\"\"\n				   data-html=\"true\"\n				   tabindex=\"0\"\n				   data-trigger=\"focus\"\n				   role=\"button\"\n				   data-toggle=\"popover\"\n				   data-original-title=\"\"\n				   data-content=\"\n                        <table class='bmlt_a_format table-bordered'>\n"
+    + ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.formats_expanded : depth0),{"name":"each","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":29,"column":24},"end":{"line":35,"column":33}}})) != null ? stack1 : "")
+    + "                    </table>\">\n                    <span class=\"glyphicon glyphicon-search\"\n						  aria-hidden=\"true\"\n						  data-toggle=\"popover\"\n						  data-trigger=\"focus\"\n						  data-html=\"true\"\n						  role=\"button\"></span>"
     + container.escapeExpression(container.lambda((depth0 != null ? depth0.formats : depth0), depth0))
-    + "\n                </a>\n";
+    + "\n				</a>\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3="function", alias4=container.escapeExpression;
 
   return "                        <tr>\n                            <td class='formats_key'>"
-    + alias4(((helper = (helper = helpers.key || (depth0 != null ? depth0.key : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"key","hash":{},"data":data,"loc":{"start":{"line":29,"column":52},"end":{"line":29,"column":59}}}) : helper)))
+    + alias4(((helper = (helper = helpers.key || (depth0 != null ? depth0.key : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"key","hash":{},"data":data,"loc":{"start":{"line":31,"column":52},"end":{"line":31,"column":59}}}) : helper)))
     + "</td>\n                            <td class='formats_name'>"
-    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":30,"column":53},"end":{"line":30,"column":61}}}) : helper)))
+    + alias4(((helper = (helper = helpers.name || (depth0 != null ? depth0.name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data,"loc":{"start":{"line":32,"column":53},"end":{"line":32,"column":61}}}) : helper)))
     + "</td>\n                            <td class='formats_description'>"
-    + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data,"loc":{"start":{"line":31,"column":60},"end":{"line":31,"column":75}}}) : helper)))
+    + alias4(((helper = (helper = helpers.description || (depth0 != null ? depth0.description : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"description","hash":{},"data":data,"loc":{"start":{"line":33,"column":60},"end":{"line":33,"column":75}}}) : helper)))
     + "</td>\n                        </tr>\n";
 },"5":function(container,depth0,helpers,partials,data) {
-    return "                <div></div>\n";
+    return "				<div></div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
-    return "                <div class=\"bmlt-comments\">"
-    + container.escapeExpression((helpers.formatLink||(depth0 && depth0.formatLink)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.formatted_comments : depth0),{"name":"formatLink","hash":{},"data":data,"loc":{"start":{"line":46,"column":43},"end":{"line":46,"column":81}}}))
+    return "				<div class=\"bmlt-comments\">"
+    + container.escapeExpression((helpers.formatLink||(depth0 && depth0.formatLink)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.formatted_comments : depth0),{"name":"formatLink","hash":{},"data":data,"loc":{"start":{"line":48,"column":31},"end":{"line":48,"column":69}}}))
     + "</div>\n";
-},"9":function(container,depth0,helpers,partials,data) {
-    return "        <td class=\"bmlt-column3 virtual\">\n            <div class=\"bmlt-comments\">"
-    + container.escapeExpression((helpers.formatLink||(depth0 && depth0.formatLink)||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? depth0.formatted_comments : depth0),{"name":"formatLink","hash":{},"data":data,"loc":{"start":{"line":54,"column":39},"end":{"line":54,"column":77}}}))
-    + "</div>\n        </td>\n";
-},"11":function(container,depth0,helpers,partials,data) {
-    var alias1=container.lambda, alias2=container.escapeExpression;
-
-  return "        <td class=\"bmlt-column3\">\n            <a target=\"_blank\" href=\"https://maps.google.com/maps?q="
-    + alias2(alias1((depth0 != null ? depth0.latitude : depth0), depth0))
-    + ","
-    + alias2(alias1((depth0 != null ? depth0.longitude : depth0), depth0))
-    + "\" id=\"map-button\" class=\"btn btn-primary btn-xs\">\n            <span class=\"glyphicon glyphicon-map-marker\"></span> "
-    + alias2(alias1((depth0 != null ? depth0.map_word : depth0), depth0))
-    + "\n            </a>\n            <div class='geo hide'>"
-    + alias2(alias1((depth0 != null ? depth0.latitude : depth0), depth0))
-    + ","
-    + alias2(alias1((depth0 != null ? depth0.longitude : depth0), depth0))
-    + "</div>\n        </td>\n";
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":65,"column":9}}})) != null ? stack1 : "");
+  return ((stack1 = helpers.each.call(depth0 != null ? depth0 : (container.nullContext || {}),depth0,{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":58,"column":9}}})) != null ? stack1 : "");
 },"usePartial":true,"useData":true});
 this["hbs_Crouton"]["templates"]["weekdays"] = Handlebars.template({"1":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
@@ -13386,16 +13458,19 @@ function Crouton(config) {
 	self.max_filters = 10;  // TODO: needs to be refactored so that dropdowns are treated dynamically
 	self.config = {
 		on_complete: null,            // Javascript function to callback when data querying is completed.
+		root_server: null,			  // The root server to use.
 		placeholder_id: "bmlt-tabs",  // The DOM id that will be used for rendering
 		map_max_zoom: 15,		      // Maximum zoom for the display map
 		time_format: "h:mm a",        // The format for time
 		language: "en-US",            // Default language translation, available translations listed here: https://github.com/bmlt-enabled/crouton/blob/master/croutonjs/src/js/crouton-localization.js
 		has_tabs: true,               // Shows the day tabs
+		filter_tabs: false,   		  // Whether to show weekday tabs on filtering.
 		header: true,                 // Shows the dropdowns and buttons
 		include_weekday_button: true, // Shows the weekday button
 		button_filters: [
 			{'title': 'City', 'field': 'location_municipality'},
 		],
+		default_filter_dropdown: "",  // Sets the default format for the dropdowns, the names will match the `has_` fields dropdowns without `has_.  Example: `formats=closed`.
 		show_map: false,              // Shows the map with pins
 		map_search: null, 			  // Start search with map click (ex {"latitude":x,"longitude":y,"width":-10,"zoom":10}
 		has_cities: true,             // Shows the cities dropdown
@@ -13407,6 +13482,7 @@ function Crouton(config) {
 		has_states: false,            // Shows the states dropdown
 		has_sub_province: false,      // Shows the sub province dropdown (counties)
 		has_neighborhoods: false,     // Shows the neighborhood dropdown
+		has_languages: false,		  // Shows the language dropdown
 		show_distance: false,         // Determines distance on page load
 		distance_search: 0,			  // Makes a distance based search with results either number of / or distance from coordinates
 		recurse_service_bodies: false,// Recurses service bodies when making service bodies request
@@ -13421,7 +13497,8 @@ function Crouton(config) {
 		int_start_day_id: 1,          // Controls the first day of the week sequence.  Sunday is 1.
 		view_by: "weekday",           // TODO: replace with using the first choice in button_filters as the default view_by.
 		theme: "jack",               // Allows for setting pre-packaged themes.  Choices are listed here:  https://github.com/bmlt-enabled/crouton/blob/master/croutonjs/dist/templates/themes
-		meeting_data_template: "<div class='meeting-name'>{{this.meeting_name}}</div><div class='location-text'>{{this.location_text}}</div><div class='meeting-address'>{{this.formatted_address}}</div><div class='location-information'>{{this.formatted_location_info}}</div>"
+		meeting_data_template: "<div class='meeting-name'>{{this.meeting_name}}</div><div class='location-text'>{{this.location_text}}</div><div class='meeting-address'>{{this.formatted_address}}</div><div class='location-information'>{{this.formatted_location_info}}</div>",
+		metadata_template: "<a target='_blank' href='https://www.google.com/maps/search/?api=1&query={{this.latitude}},{{this.longitude}}&q={{this.latitude}},{{this.longitude}}' id='map-button' class='btn btn-primary btn-xs'><span class='glyphicon glyphicon-map-marker'></span> {{this.map_word}}</a><div class='geo hide'>{{this.latitude}},{{this.longitude}}</div>"
 	};
 
 	self.setConfig(config);
@@ -13471,6 +13548,24 @@ function Crouton(config) {
 			"content": 'Current Location',
 			"position": latlng,
 		}).open(self.map, currentLocationMarker);*/
+	};
+
+	self.findMarkerById = function(id) {
+		for (var m = 0; m < self.map_objects.length; m++) {
+			var map_object = self.map_objects[m];
+			if (parseInt(map_object['id']) === id) {
+				return map_object;
+			}
+		}
+
+		return null;
+	};
+
+	self.rowClick = function(id) {
+		var map_marker = self.findMarkerById(id);
+		self.map.setCenter(map_marker.getPosition());
+		self.map.setZoom(17);
+		google.maps.event.trigger(map_marker, "click");
 	};
 
 	self.addToMapObjectCollection = function(obj) {
@@ -13549,7 +13644,8 @@ function Crouton(config) {
 			'meeting_name',
 			'location_sub_province',
 			'worldid_mixed',
-			'root_server_uri'
+			'root_server_uri',
+			'id_bigint',
 		];
 
 		var extra_fields_regex = /{{this\.([A-Za-z_]*)}}/gi;
@@ -13603,6 +13699,12 @@ function Crouton(config) {
 		}, 100)
 	};
 
+	self.dayTab = function(day_id) {
+		self.hideAllPages();
+		jQuery('.nav-tabs a[href="#tab' + day_id + '"]').tab('show');
+		self.showPage("#" + day_id);
+	};
+
 	self.showPage = function (id) {
 		jQuery(id).removeClass("hide").addClass("show");
 	};
@@ -13621,12 +13723,6 @@ function Crouton(config) {
 
 	self.byDayView = function () {
 		self.resetFilter();
-		for (var a = 1; a < self.max_filters; a++) {
-			if (jQuery("#e" + a).length) {
-				jQuery("#e" + a).select2("val", null);
-			}
-		}
-
 		self.lowlightButton(".filterButton");
 		self.highlightButton("#day");
 		jQuery('.bmlt-page').each(function (index) {
@@ -13639,12 +13735,6 @@ function Crouton(config) {
 
 	self.dayView = function () {
 		self.resetFilter();
-		for (var a = 1; a < self.max_filters; a++) {
-			if (jQuery("#e" + a).length) {
-				jQuery("#e" + a).select2("val", null);
-			}
-		}
-
 		self.lowlightButton(".filterButton");
 		self.highlightButton("#day");
 		jQuery('.bmlt-page').each(function (index) {
@@ -13658,12 +13748,6 @@ function Crouton(config) {
 
 	self.filteredView = function (field) {
 		self.resetFilter();
-		for (var a = 1; a < self.max_filters; a++) {
-			if (jQuery("#e" + a).length) {
-				jQuery("#e" + a).select2("val", null);
-			}
-		}
-
 		self.lowlightButton("#day");
 		self.lowlightButton(".filterButton");
 		self.highlightButton("#filterButton_" + field);
@@ -13686,24 +13770,37 @@ function Crouton(config) {
 		jQuery(id).removeClass("show").addClass("hide");
 	};
 
-	self.filteredPage = function (id, dataType, dataValue) {
-		self.resetFilter();
-		self.showPage(id);
+	self.hideAllPages = function (id) {
+		jQuery("#tab-pane").removeClass("show").addClass("hide");
+	};
+
+	self.filteredPage = function (dataType, dataValue) {
+		jQuery(".meeting-header").removeClass("hide");
 		jQuery(".bmlt-data-row").removeClass("hide");
-		if (dataType !== "formats") {
+		if (dataType !== "formats" && dataType !== "languages") {
 			jQuery(".bmlt-data-row").not("[data-" + dataType + "='" + dataValue + "']").addClass("hide");
 		} else {
 			jQuery(".bmlt-data-row").not("[data-" + dataType + "~='" + dataValue + "']").addClass("hide");
 		}
 
-		jQuery(".bmlt-data-rows").each(function (index, value) {
-			if (jQuery(value).find(".bmlt-data-row.hide").length === jQuery(value).find(".bmlt-data-row").length) {
-				jQuery(value).find(".meeting-header").addClass("hide");
-			}
-		})
+		if (self.config['filter_tabs']) {
+			self.showPage("#nav-days");
+			self.showPage("#tabs-content");
+		} else {
+			self.lowlightButton(".filterButton");
+			self.lowlightButton("#day");
+			self.showPage("#byday");
+
+			jQuery(".bmlt-data-rows").each(function (index, value) {
+				if (jQuery(value).find(".bmlt-data-row.hide").length === jQuery(value).find(".bmlt-data-row").length) {
+					jQuery(value).find(".meeting-header").addClass("hide");
+				}
+			});
+		}
 	};
 
 	self.resetFilter = function () {
+		jQuery(".filter-dropdown").val(null).trigger("change");
 		jQuery(".meeting-header").removeClass("hide");
 		jQuery(".bmlt-data-row").removeClass("hide");
 	};
@@ -13800,7 +13897,7 @@ function Crouton(config) {
 		var meetings = [];
 
 		crouton_Handlebars.registerPartial("meetingDataTemplate", self.config['meeting_data_template']);
-		//crouton_Handlebars.registerPartial("metaDataTemplate", self.config['metadata_template']);
+		crouton_Handlebars.registerPartial("metaDataTemplate", self.config['metadata_template']);
 
 		for (var m = 0; m < meetingData.length; m++) {
 			meetingData[m]['formatted_comments'] = meetingData[m]['comments'];
@@ -13975,6 +14072,15 @@ Crouton.prototype.render = function(callback) {
 			self.getFormats(function (data) {
 				self.formatsData = data;
 				self.uniqueData['formats'] = data;
+				self.uniqueData['languages'] = [];
+
+				for (var l = 0; l < data.length; l++) {
+					var format = data[l];
+					if (format['format_type_enum'] === "LANG") {
+						self.uniqueData['languages'].push(data[l]);
+					}
+				}
+
 				var weekdaysData = [];
 				var enrichedMeetingData = self.enrichMeetings(self.meetingData);
 
@@ -14043,6 +14149,13 @@ Crouton.prototype.render = function(callback) {
 					},
 					"uniqueData": self.uniqueData
 				}, function () {
+					if (self.config['map_search'] != null || self.config['show_map']) {
+						jQuery(".bmlt-data-row").css({cursor: "pointer"});
+						jQuery(".bmlt-data-row").click(function () {
+							self.rowClick(parseInt(this.id.replace("meeting-data-row-", "")));
+						});
+					}
+
 					jQuery("#" + self.config['placeholder_id']).addClass("bootstrap-bmlt");
 					jQuery(".crouton-select").select2({
 						dropdownAutoWidth: true,
@@ -14059,26 +14172,16 @@ Crouton.prototype.render = function(callback) {
 						}
 					});
 
-					for (var a = 1; a < self.max_filters; a++) {
-						jQuery("#e" + a).on('select2:select', function (e) {
-							for (var j = 1; j < self.max_filters; j++) {
-								if (this.id !== "e" + j) {
-									if (jQuery("#e" + j).length) {
-										jQuery("#e" + j).select2("val", null);
-									}
-								}
-							}
+					jQuery('.filter-dropdown').on('select2:select', function (e) {
+						jQuery(this).parent().siblings().children(".filter-dropdown").val(null).trigger('change');
 
-							var val = jQuery("#" + this.id).val();
-							jQuery('.bmlt-page').each(function (index) {
-								self.hidePage("#" + this.id);
-								self.lowlightButton(".filterButton");
-								self.lowlightButton("#day");
-								self.filteredPage("#byday", e.target.getAttribute("data-pointer").toLowerCase(), val.replace("a-", ""));
-								return;
-							});
+						var val = jQuery(this).val();
+						jQuery('.bmlt-page').each(function () {
+							self.hidePage(this);
+							self.filteredPage(e.target.getAttribute("data-pointer").toLowerCase(), val.replace("a-", ""));
+							return;
 						});
-					}
+					});
 
 					jQuery("#day").on('click', function () {
 						self.showView(self.config['view_by'] === 'byday' ? 'byday' : 'day');
@@ -14111,6 +14214,11 @@ Crouton.prototype.render = function(callback) {
 					self.showPage(".bmlt-header");
 					self.showPage(".bmlt-tabs");
 					self.showView(self.config['view_by']);
+
+					if (self.config['default_filter_dropdown'] !== "") {
+						var filter = self.config['default_filter_dropdown'].toLowerCase().split("=");
+						jQuery("#filter-dropdown-" + filter[0]).val('a-' + filter[1]).trigger('change').trigger('select2:select');
+					}
 
 					if (self.config['show_distance']) {
 						self.getCurrentLocation(self.showLocation);
@@ -14198,7 +14306,7 @@ Crouton.prototype.renderMap = function() {
 	// Set CSS for the control interior
 	var clickSearch = document.createElement('div');
 	clickSearch.className = 'mapcontrols';
-	clickSearch.innerHTML = '<label for="nearme" class="mapcontrolslabel"><input type="radio" id="nearme" name="mapcontrols"> Near Me</label><label for="textsearch" class="mapcontrolslabel"><input type="radio" id="textsearch" name="mapcontrols"> Text Search</label><label for="clicksearch" class="mapcontrolslabel"><input type="radio" id="clicksearch" name="mapcontrols"> Click Search</label><label for="panzoom" class="mapcontrolslabel"><input type="radio" id="panzoom" name="mapcontrols" checked> Pan + Zoom</label>';
+	clickSearch.innerHTML = '<label for="nearme" class="mapcontrolslabel"><input type="radio" id="nearme" name="mapcontrols"> ' + self.localization.getWord('near_me') + '</label><label for="textsearch" class="mapcontrolslabel"><input type="radio" id="textsearch" name="mapcontrols"> ' + self.localization.getWord('text_search') + '</label><label for="clicksearch" class="mapcontrolslabel"><input type="radio" id="clicksearch" name="mapcontrols"> ' + self.localization.getWord('click_search') + '</label><label for="panzoom" class="mapcontrolslabel"><input type="radio" id="panzoom" name="mapcontrols" checked> ' + self.localization.getWord('pan_and_zoom') + '</label>';
 	controlUI.appendChild(clickSearch);
 	controlDiv.index = 1;
 
@@ -14348,11 +14456,17 @@ Crouton.prototype.initMap = function(callback) {
 			position: latLng
 		});
 
+		marker['id'] = location['id_bigint'];
+		marker['day_id'] = location['weekday_tinyint'];
+
 		self.addToMapObjectCollection(marker);
 		self.oms.addMarker(marker);
 
 		self.map_clusters.push(marker);
 		google.maps.event.addListener(marker, 'click', function (evt) {
+			jQuery(".bmlt-data-row > td").removeClass("rowHighlight");
+			jQuery("#meeting-data-row-" + marker['id'] + " > td").addClass("rowHighlight");
+			self.dayTab(marker['day_id']);
 			infoWindow.setContent(marker_html);
 			infoWindow.open(self.map, marker);
 		});
@@ -14366,7 +14480,7 @@ Crouton.prototype.initMap = function(callback) {
 		zoomOnClick: false
 	});
 
-	callback();
+	if (callback !== undefined && isFunction(callback)) callback();
 };
 
 crouton_Handlebars.registerHelper('getDayOfTheWeek', function(day_id) {
