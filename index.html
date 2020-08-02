@@ -4,12 +4,12 @@
     <title>Ketchup Search</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="croutonjs/crouton.min.css" />
+    <link rel="stylesheet" type="text/css" href="node_modules/@bmlt-enabled/croutonjs/crouton.min.css" />
 </head>
 <body>
 <div id="bmlt-tabs"></div>
 </body>
-<script src="croutonjs/crouton.min.js"></script>
+<script src="node_modules/@bmlt-enabled/croutonjs/crouton.min.js"></script>
 <script type="text/javascript">
     var crouton = new Crouton({
         "root_server": "https://tomato.bmltenabled.org/main_server",
@@ -17,7 +17,7 @@
         "google_api_key": "AIzaSyCYN5UVYFar27vWacwcx5fOUS9CMKN9fDY",
         "show_distance": true,
         "theme": "sezf",
-        "template_path": "croutonjs/templates",
+        "template_path": "node_modules/@bmlt-enabled/croutonjs/templates",
         "filter_tabs": true
     });
 </script>
