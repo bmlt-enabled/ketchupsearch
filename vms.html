@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ketchup VMs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/crouton.min.css" />
+</head>
+<body>
+Note: timezone information is not yet available in the root server.
+<div style="display: block">
+    Total Virtual Meetings in Tomato: <span id="meeting-count">**calculating**</span>.
+</div>
+<div id="loading"><img src="resources/loading.gif"></div>
+<div id="bmlt-tabs"></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/crouton.min.js"></script>
+<script type="text/javascript">
+    var crouton;
+    $.getJSON("https://tomato.bmltenabled.org/main_server/client_interface/jsonp/?switcher=GetServiceBodies&callback=?", function(data) {
+        var topLevelServices = [""];
+        for (var serviceBody of data) {
+            if (parseInt(serviceBody["parent_id"]) === 0) {
+                topLevelServices.push(serviceBody["id"])
+            }
+        }
+
+        crouton = new Crouton({
+            root_server: "https://tomato.bmltenabled.org/main_server",
+            custom_query: "&venue_types=2&recursive=1&" + topLevelServices.join("&services[]="),
+            theme: "frog",
+            template_path: "https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/templates",
+            has_venues: false,
+            has_locations: false,
+            has_cities: false,
+            has_zip_codes: false,
+            has_groups: true,
+            has_regions: true,
+            has_areas: true,
+            button_filters: [],
+            on_complete: function() {
+                $("#loading").hide();
+            }
+        });
+        crouton.render();
+        crouton.meetingCount(function(res) {
+            document.getElementById("meeting-count").innerHTML = res;
+        });
+    })
+</script>
+</html>
