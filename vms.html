@@ -17,7 +17,7 @@ Note: timezone information is not yet available in the root server.
 <script src="https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/crouton.min.js"></script>
 <script type="text/javascript">
     var crouton;
-    $.getJSON("https://tomato.bmltenabled.org/main_server/client_interface/jsonp/?switcher=GetServiceBodies&callback=?", function(data) {
+    $.getJSON("https://aggregator.bmltenabled.org/main_server/client_interface/jsonp/?switcher=GetServiceBodies&callback=?", function(data) {
         var topLevelServices = [""];
         for (var serviceBody of data) {
             if (parseInt(serviceBody["parent_id"]) === 0) {
@@ -26,7 +26,7 @@ Note: timezone information is not yet available in the root server.
         }
 
         crouton = new Crouton({
-            root_server: "https://tomato.bmltenabled.org/main_server",
+            root_server: "https://aggregator.bmltenabled.org/main_server",
             custom_query: "&venue_types=2&recursive=1&" + topLevelServices.join("&services[]="),
             theme: "frog",
             template_path: "https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/templates",
