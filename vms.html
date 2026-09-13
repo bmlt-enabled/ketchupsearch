@@ -2,50 +2,227 @@
 <html>
 <head>
     <title>Ketchup VMs</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/crouton.min.css" />
+    <style>
+        body { font-family: "Droid Sans", sans-serif; margin: 12px; }
+        #status-line { margin-bottom: 8px; line-height: 1.4; }
+        #load-status { color: #444; }
+        #loading { margin: 12px 0; }
+    </style>
 </head>
 <body>
-Note: timezone information is not yet available in the root server.
-<div style="display: block">
+<div id="status-line">
     Total Virtual Meetings in Tomato: <span id="meeting-count">**calculating**</span>.
+    <div id="load-status">Loading virtual meetings…</div>
 </div>
-<div id="loading"><img src="resources/loading.gif"></div>
+<div id="loading"><img src="resources/loading.gif" alt="Loading"></div>
 <div id="bmlt-tabs"></div>
-</body>
+<script src="https://cdn.jsdelivr.net/npm/tz-lookup@6.1.25/tz.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/crouton.min.js"></script>
 <script type="text/javascript">
-    var crouton;
-    $.getJSON("https://aggregator.bmltenabled.org/main_server/client_interface/jsonp/?switcher=GetServiceBodies&callback=?", function(data) {
-        var topLevelServices = [""];
-        for (var serviceBody of data) {
-            if (parseInt(serviceBody["parent_id"]) === 0) {
-                topLevelServices.push(serviceBody["id"])
-            }
-        }
+(function () {
+    var ROOT = "https://aggregator.bmltenabled.org/main_server";
+    var CACHE_DB = "ketchup-vms";
+    var CACHE_STORE = "payloads";
+    var CACHE_KEY = "virtual-meetings";
+    var CACHE_TTL_MS = 4 * 60 * 60 * 1000;
+    var LOCAL_TZ = (Intl.DateTimeFormat().resolvedOptions().timeZone) || "UTC";
+    var MEETING_FIELDS = [
+        "id_bigint", "meeting_name", "weekday_tinyint", "start_time", "duration_time",
+        "time_zone", "latitude", "longitude", "formats", "format_shared_id_list",
+        "venue_type", "location_municipality", "location_province", "location_nation",
+        "location_street", "location_text", "location_info", "location_neighborhood",
+        "location_sub_province", "location_postal_code_1", "virtual_meeting_link",
+        "virtual_meeting_additional_info", "phone_meeting_number", "comments",
+        "service_body_bigint", "root_server_uri", "worldid_mixed"
+    ].join(",");
 
-        crouton = new Crouton({
-            root_server: "https://aggregator.bmltenabled.org/main_server",
-            custom_query: "&venue_types=2&recursive=1&" + topLevelServices.join("&services[]="),
-            theme: "frog",
-            template_path: "https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/templates",
-            has_venues: false,
-            has_locations: false,
-            has_cities: false,
-            has_zip_codes: false,
-            has_groups: true,
-            has_regions: true,
-            has_areas: true,
-            button_filters: [],
-            on_complete: function() {
-                $("#loading").hide();
+    function setStatus(message) {
+        var el = document.getElementById("load-status");
+        if (el) el.textContent = message;
+    }
+
+    function jsonpResponse(payload) {
+        return {
+            ok: true,
+            json: function () { return Promise.resolve(payload); }
+        };
+    }
+
+    function openCache() {
+        return new Promise(function (resolve, reject) {
+            if (!window.indexedDB) {
+                resolve(null);
+                return;
+            }
+            var req = indexedDB.open(CACHE_DB, 1);
+            req.onupgradeneeded = function () {
+                req.result.createObjectStore(CACHE_STORE);
+            };
+            req.onsuccess = function () { resolve(req.result); };
+            req.onerror = function () { resolve(null); };
+        });
+    }
+
+    function readCache() {
+        return openCache().then(function (db) {
+            if (!db) return null;
+            return new Promise(function (resolve) {
+                var tx = db.transaction(CACHE_STORE, "readonly");
+                var req = tx.objectStore(CACHE_STORE).get(CACHE_KEY);
+                req.onsuccess = function () { resolve(req.result || null); };
+                req.onerror = function () { resolve(null); };
+            });
+        });
+    }
+
+    function writeCache(payload) {
+        var record = {
+            savedAt: Date.now(),
+            meetings: payload.meetings,
+            formats: payload.formats
+        };
+        return openCache().then(function (db) {
+            if (!db) return;
+            return new Promise(function (resolve) {
+                var tx = db.transaction(CACHE_STORE, "readwrite");
+                tx.objectStore(CACHE_STORE).put(record, CACHE_KEY);
+                tx.oncomplete = function () { resolve(); };
+                tx.onerror = function () { resolve(); };
+            });
+        });
+    }
+
+    function fillTimeZone(meeting) {
+        if ((meeting.time_zone || "").trim()) return;
+        var lat = parseFloat(meeting.latitude);
+        var lng = parseFloat(meeting.longitude);
+        if (lat && lng && !(lat === 0 && lng === 0) && typeof tzlookup === "function") {
+            try {
+                meeting.time_zone = tzlookup(lat, lng);
+                return;
+            } catch (err) {}
+        }
+        // Keep the listed clock time as-is when the meeting has no zone or coords.
+        meeting.time_zone = LOCAL_TZ;
+    }
+
+    function uniqueBy(list, keyFn) {
+        var seen = {};
+        var out = [];
+        (list || []).forEach(function (item) {
+            var key = keyFn(item);
+            if (!seen[key]) {
+                seen[key] = true;
+                out.push(item);
             }
         });
-        crouton.render();
-        crouton.meetingCount(function(res) {
-            document.getElementById("meeting-count").innerHTML = res;
+        return out;
+    }
+
+    function fetchDay(weekday) {
+        var url = ROOT + "/client_interface/json/?switcher=GetSearchResults"
+            + "&get_used_formats"
+            + "&venue_types[]=2"
+            + "&weekdays[]=" + weekday
+            + "&page_size=5000"
+            + "&data_field_key=" + encodeURIComponent(MEETING_FIELDS);
+        return fetch(url).then(function (res) {
+            if (!res.ok) throw new Error("HTTP " + res.status + " for weekday " + weekday);
+            return res.json();
         });
-    })
+    }
+
+    function fetchAllVirtualMeetings() {
+        setStatus("Fetching meetings by day from BMLT (free, no timezone API)…");
+        var days = [1, 2, 3, 4, 5, 6, 7];
+        return Promise.all(days.map(fetchDay)).then(function (chunks) {
+            var meetings = [];
+            var formats = [];
+            chunks.forEach(function (chunk) {
+                var dayMeetings = Array.isArray(chunk) ? chunk : (chunk.meetings || []);
+                var dayFormats = Array.isArray(chunk) ? [] : (chunk.formats || []);
+                meetings = meetings.concat(dayMeetings);
+                formats = formats.concat(dayFormats);
+            });
+            meetings = uniqueBy(meetings, function (m) { return String(m.id_bigint); });
+            formats = uniqueBy(formats, function (f) {
+                return (f.root_server_uri || "") + "|" + (f.id || f.key_string);
+            });
+            meetings.forEach(fillTimeZone);
+            if (!meetings.length) throw new Error("No virtual meetings returned");
+            return { meetings: meetings, formats: formats };
+        });
+    }
+
+    function loadVirtualMeetings(fallbackUrl) {
+        return readCache().then(function (cached) {
+            var fresh = cached && (Date.now() - cached.savedAt) < CACHE_TTL_MS;
+            if (fresh) {
+                (cached.meetings || []).forEach(fillTimeZone);
+                setStatus("Times shown in your timezone (" + LOCAL_TZ + "). Cached list, refreshed every 4 hours.");
+                return { meetings: cached.meetings, formats: cached.formats };
+            }
+            return fetchAllVirtualMeetings().then(function (payload) {
+                writeCache(payload);
+                setStatus("Times shown in your timezone (" + LOCAL_TZ + ").");
+                return payload;
+            }).catch(function (err) {
+                console.warn("Parallel virtual meeting fetch failed", err);
+                if (cached && cached.meetings && cached.meetings.length) {
+                    (cached.meetings || []).forEach(fillTimeZone);
+                    setStatus("Times shown in your timezone (" + LOCAL_TZ + "). Showing cached list after a live fetch error.");
+                    return { meetings: cached.meetings, formats: cached.formats };
+                }
+                setStatus("Falling back to a full aggregator query…");
+                return origFetchJsonp(fallbackUrl).then(function (res) { return res.json(); });
+            });
+        }).then(function (payload) {
+            if (payload && payload.meetings) payload.meetings.forEach(fillTimeZone);
+            return jsonpResponse(payload);
+        });
+    }
+
+    var origFetchJsonp = typeof fetchJsonp === "function" ? fetchJsonp : null;
+    if (origFetchJsonp) {
+        window.fetchJsonp = function (url, opts) {
+            if (String(url).indexOf("switcher=GetSearchResults") !== -1) {
+                return loadVirtualMeetings(url);
+            }
+            return origFetchJsonp(url, opts);
+        };
+    } else {
+        setStatus("Times shown in your timezone (" + LOCAL_TZ + ").");
+    }
+
+    // Crouton templates and helpers look up the global `crouton` instance.
+    var crouton = window.crouton = new Crouton({
+        root_server: ROOT,
+        // page_size is an aggregator-legal filter so we can skip the worldwide service-body scan.
+        custom_query: "&venue_types[]=2&page_size=20000",
+        auto_tz_adjust: true,
+        theme: "frog",
+        template_path: "https://cdn.jsdelivr.net/npm/@bmlt-enabled/croutonjs@3.15.2/templates",
+        has_venues: false,
+        has_locations: false,
+        has_cities: false,
+        has_zip_codes: false,
+        has_groups: true,
+        has_regions: true,
+        has_areas: true,
+        button_filters: [],
+        on_complete: function () {
+            $("#loading").hide();
+        }
+    });
+    crouton.render();
+    crouton.meetingCount(function (res) {
+        document.getElementById("meeting-count").innerHTML = res;
+    });
+})();
 </script>
+</body>
 </html>
