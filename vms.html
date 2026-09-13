@@ -11,6 +11,15 @@
         #status-line { margin-bottom: 8px; line-height: 1.4; }
         #load-status { color: #444; }
         #loading { margin: 12px 0; }
+        #bmlt-tabs .bmlt-time .original-time,
+        #bmlt-tabs .bmlt-time-2 .original-time {
+            display: block;
+            margin-top: 3px;
+            font-size: 0.82em;
+            font-weight: normal;
+            line-height: 1.3;
+            opacity: 0.85;
+        }
     </style>
 </head>
 <body>
@@ -97,17 +106,97 @@
     }
 
     function fillTimeZone(meeting) {
-        if ((meeting.time_zone || "").trim()) return;
+        if (!meeting.listed_time_zone) {
+            meeting.listed_time_zone = (meeting.time_zone || "").trim();
+        }
+        if (meeting.listed_time_zone) {
+            meeting.time_zone = meeting.listed_time_zone;
+            meeting.time_zone_source = "listed";
+            return;
+        }
         var lat = parseFloat(meeting.latitude);
         var lng = parseFloat(meeting.longitude);
         if (lat && lng && !(lat === 0 && lng === 0) && typeof tzlookup === "function") {
             try {
                 meeting.time_zone = tzlookup(lat, lng);
+                meeting.time_zone_source = "coords";
                 return;
             } catch (err) {}
         }
         // Keep the listed clock time as-is when the meeting has no zone or coords.
         meeting.time_zone = LOCAL_TZ;
+        meeting.time_zone_source = "local";
+    }
+
+    function formatListedTime(startTime) {
+        var fmt = (window.crouton && crouton.config && crouton.config.time_format) || "h:mm a";
+        if (typeof moment !== "function") return startTime;
+        var parsed = moment(startTime, ["HH:mm:ss", "HH:mm"], true);
+        return parsed.isValid() ? parsed.format(fmt) : startTime;
+    }
+
+    function formatTimeZoneLabel(zone, startTime) {
+        if (!zone) return "timezone unknown";
+        var abbr = "";
+        try {
+            if (typeof moment === "function" && moment.tz) {
+                var zoned = moment.tz(startTime, ["HH:mm:ss", "HH:mm"], zone);
+                if (zoned.isValid()) abbr = zoned.format("z");
+            }
+        } catch (err) {}
+        if (abbr && abbr !== zone && abbr.indexOf("+") !== 0 && abbr.indexOf("-") !== 0) {
+            return zone + " (" + abbr + ")";
+        }
+        return zone;
+    }
+
+    function originalTimeLine(meeting) {
+        var listedTime = formatListedTime(meeting.start_time);
+        var tz = formatTimeZoneLabel(meeting.time_zone, meeting.start_time);
+        var origDay = meeting.weekday_tinyint && crouton.localization
+            ? crouton.localization.getDayOfTheWeekWord(parseInt(meeting.weekday_tinyint, 10))
+            : "";
+        var line = "Listed: ";
+        if (origDay && meeting.formatted_day && origDay !== meeting.formatted_day) {
+            line += origDay + " ";
+        }
+        line += listedTime + " " + tz;
+        if (meeting.time_zone_source === "coords") {
+            line += ", from coordinates";
+        } else if (meeting.time_zone_source === "local") {
+            line += ", shown as listed";
+        }
+        return line;
+    }
+
+    function attachOriginalTimes(meetings) {
+        (meetings || []).forEach(function (meeting) {
+            meeting.original_time_line = originalTimeLine(meeting);
+        });
+        return meetings;
+    }
+
+    function annotateTimesInTable() {
+        var byId = {};
+        (crouton.meetingData || []).forEach(function (meeting) {
+            byId[String(meeting.id_bigint)] = meeting;
+            if (meeting.membersOfGroup) {
+                meeting.membersOfGroup.forEach(function (member) {
+                    byId[String(member.id_bigint)] = member;
+                });
+            }
+        });
+        document.querySelectorAll(".bmlt-data-row").forEach(function (row) {
+            var id = (row.getAttribute("data-id") || row.id || "").replace("meeting-data-row-", "");
+            var meeting = byId[id];
+            if (!meeting || !meeting.original_time_line) return;
+            var timeEl = row.querySelector(".bmlt-time-2, .bmlt-time");
+            if (!timeEl || timeEl.querySelector(".original-time")) return;
+            var orig = document.createElement("div");
+            orig.className = "original-time";
+            orig.textContent = meeting.original_time_line;
+            timeEl.appendChild(orig);
+        });
     }
 
     function uniqueBy(list, keyFn) {
@@ -163,18 +252,18 @@
             var fresh = cached && (Date.now() - cached.savedAt) < CACHE_TTL_MS;
             if (fresh) {
                 (cached.meetings || []).forEach(fillTimeZone);
-                setStatus("Times shown in your timezone (" + LOCAL_TZ + "). Cached list, refreshed every 4 hours.");
+                setStatus("Times shown in " + LOCAL_TZ + ", with original time and timezone underneath. Cached list, refreshed every 4 hours.");
                 return { meetings: cached.meetings, formats: cached.formats };
             }
             return fetchAllVirtualMeetings().then(function (payload) {
                 writeCache(payload);
-                setStatus("Times shown in your timezone (" + LOCAL_TZ + ").");
+                setStatus("Times shown in " + LOCAL_TZ + ", with original time and timezone underneath.");
                 return payload;
             }).catch(function (err) {
                 console.warn("Parallel virtual meeting fetch failed", err);
                 if (cached && cached.meetings && cached.meetings.length) {
                     (cached.meetings || []).forEach(fillTimeZone);
-                    setStatus("Times shown in your timezone (" + LOCAL_TZ + "). Showing cached list after a live fetch error.");
+                    setStatus("Times shown in " + LOCAL_TZ + ", with original time and timezone underneath. Showing cached list after a live fetch error.");
                     return { meetings: cached.meetings, formats: cached.formats };
                 }
                 setStatus("Falling back to a full aggregator query…");
@@ -195,7 +284,7 @@
             return origFetchJsonp(url, opts);
         };
     } else {
-        setStatus("Times shown in your timezone (" + LOCAL_TZ + ").");
+        setStatus("Times shown in " + LOCAL_TZ + ", with original time and timezone underneath.");
     }
 
     // Crouton templates and helpers look up the global `crouton` instance.
@@ -216,8 +305,13 @@
         button_filters: [],
         on_complete: function () {
             $("#loading").hide();
+            annotateTimesInTable();
         }
     });
+    var origEnrich = crouton.enrichMeetings.bind(crouton);
+    crouton.enrichMeetings = function (meetingData) {
+        return attachOriginalTimes(origEnrich(meetingData));
+    };
     crouton.render();
     crouton.meetingCount(function (res) {
         document.getElementById("meeting-count").innerHTML = res;
